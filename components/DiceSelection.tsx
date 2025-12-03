@@ -12,6 +12,9 @@ const DiceSelection: React.FC<DiceSelectionProps> = ({ onSelect }) => {
         <Dices className="w-20 h-20 mx-auto mb-6 text-white opacity-90" />
         <h1 className="text-4xl font-bold tracking-tight text-white mb-2">MonoDice</h1>
         <p className="text-gray-400">Select the number of dice to start</p>
+        <p className="text-xs text-zinc-600 mt-2 font-medium tracking-widest uppercase">
+          Allan drinking game series
+        </p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 w-full max-w-xs">
