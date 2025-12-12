@@ -169,12 +169,13 @@ const GameScreen: React.FC<GameScreenProps> = ({ diceCount, onReset }) => {
   };
 
   return (
-    <div className="flex flex-col h-screen max-h-screen overflow-hidden bg-black text-white relative">
+    // Removed bg-black to allow App's gradient to show through
+    <div className="flex flex-col h-screen max-h-screen overflow-hidden bg-transparent text-white relative">
       {/* Header with Reset Button */}
       <div className="absolute top-0 right-0 p-6 z-10">
         <button 
           onClick={handleReset}
-          className="p-2 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+          className="p-2 rounded-full bg-zinc-900/50 hover:bg-zinc-900 text-zinc-300 hover:text-white transition-colors backdrop-blur-sm"
           aria-label="Reset Game"
         >
           <RefreshCw size={20} />

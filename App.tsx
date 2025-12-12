@@ -17,7 +17,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans antialiased selection:bg-white selection:text-black">
+    // Applied radial gradient for casino table effect: Felt Green -> Dark Green
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_center,_#35654d_0%,_#1e3b2d_100%)] text-white font-sans antialiased selection:bg-white selection:text-black">
       {appState === AppState.SELECTION ? (
         <DiceSelection onSelect={handleSelectDice} />
       ) : (
